@@ -1,12 +1,13 @@
-package com.taya.demo;
+package com.taya;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TayaApplication {
-
+public class TaYaApp {
+	
 	public static void main(String[] args) {
-		SpringApplication.run(TayaApplication.class, args);
+		SpringApplication.run(TaYaApp.class, args);
 	}
+
 }
