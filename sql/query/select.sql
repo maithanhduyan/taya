@@ -1,1 +1,1 @@
-SELECT * FROM Product
+SELECT * FROM foo
