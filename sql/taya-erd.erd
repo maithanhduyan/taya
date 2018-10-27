@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="taya-erd.erd" time="201810271040">
+	<entities>
+		<data-source id="postgres-jdbc-166b37e7938-1fd4ecfa656497a3">
+			<entity id="1" name="foo" fq-name="public.foo" order="0" x="145" y="105">
+				<path name="public"/>
+				<path name="taya"/>
+			</entity>
+			<entity id="2" name="product" fq-name="public.product" order="1" x="326" y="95">
+				<path name="public"/>
+				<path name="taya"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations/>
+	<notes/>
+</diagram>
