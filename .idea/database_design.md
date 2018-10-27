@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_a14116
 Table Design
 <hr>
 <table>
@@ -25,4 +24,3 @@ Table Design
 </table>
 =======
 Table
->>>>>>> .merge_file_a13388
