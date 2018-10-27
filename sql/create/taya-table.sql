@@ -1,13 +1,10 @@
-CREATE TABLE Product(
-	productId BIGINT PRIMARY KEY,
-	productName VARCHAR(255)  NOT NULL UNIQUE,
-	productNumber VARCHAR(255) NOT NULL UNIQUE,
-	productCode VARCHAR(32) NOT NULL UNIQUE,
-	makeflag BOOLEAN,
-	finishGoodFlags BOOLEAN,
-	color VARCHAR(50) ,
-	safetyStockLever INT,
-	standardCost INT
-);
---DROP TABLE Product
 
+CREATE TABLE foo(
+	fooId BIGINT PRIMARY KEY,
+	fooName VARCHAR(255)  NOT NULL ,
+	fooCode VARCHAR(32) NOT NULL ,
+	userCreateId BIGINT,
+	userName VARCHAR(255),
+	createDate DATE,
+);
+--DROP TABLE foo

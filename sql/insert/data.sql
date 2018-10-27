@@ -1,1 +1,5 @@
-INSERT INTO Product (productId, productName, productNumber, productCode, makeflag, finishGoodFlags, color, safetyStockLever, standardCost) VALUES (1,'Foo','foo',1,1,'Blue',10,10);
+INSERT INTO foo(fooId,fooName,fooCode) VALUES (111,'foo111','f111');
+
+INSERT INTO foo(fooId,fooName,fooCode) VALUES (222,'foo222','f222');
+
+INSERT INTO foo(fooId,fooName,fooCode) VALUES (333,'foo333','f333');
