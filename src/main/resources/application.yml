@@ -11,11 +11,3 @@ spring:
       name: tayaservice
 server:
    port: 9090
-
----
-spring: 
-   profiles: prod
-   application:
-      name: tayaservice
-server: 
-   port: 4431
