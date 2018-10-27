@@ -3,12 +3,18 @@ package com.taya.model.production;
 import java.io.Serializable;
 import javax.persistence.*;
 
+
+/**
+ * The persistent class for the product database table.
+ * 
+ */
 @Entity
 @NamedQuery(name="Product.findAll", query="SELECT p FROM Product p")
 public class Product implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long productid;
 
 	private String color;
