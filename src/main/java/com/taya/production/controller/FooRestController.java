@@ -1,7 +1,6 @@
 package com.taya.production.controller;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,16 +15,18 @@ import org.springframework.web.bind.annotation.RestController;
 import com.taya.production.dao.FooDao;
 import com.taya.production.model.Foo;
 import com.taya.production.service.FooService;
+import com.taya.utils.StringUtil;
 
 @RestController
 public class FooRestController {
 	
-	@SuppressWarnings("unused")
+	@SuppressWarnings(StringUtil.UNUSED)
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
 	
 	@Autowired
 	private FooService fooService;
 	
+	@SuppressWarnings(StringUtil.UNUSED)
 	@Autowired
 	private FooDao fooDao;
 	
