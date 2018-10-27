@@ -5,9 +5,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
-public interface HomeController {
+@RequestMapping("/api")
+public class  HomeController {
 	
 	@ResponseBody
-	public String welcome() ;
+	public String welcome() {
+		return "Welcom Spring Boot.";
+	}
 }
