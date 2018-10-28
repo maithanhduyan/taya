@@ -9,6 +9,6 @@ package com.taya.utils;
 public class QueryUtil {
 
 	public static final String SELECT = "select";
-	
+
 	public static final String SELECTFROM = "select * from";
 }
