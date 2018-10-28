@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>TAYA</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>
+<script th:src="@{/js/main.js}"></script>
+<link th:href="@{/css/main.css}" rel="stylesheet" />
+<head>
+<body ng-app="Foo" ng-controller="FooController">
+
+	<form ng-submit="submitFoo()">
+		<table border="0">
+			<tr>
+				<td>Foo Id</td>
+				<td>{{fooForm.fooId}}</td>
+			</tr>
+			<tr>
+				<td>Foo Code</td>
+				<td><input type="text" ng-model="fooForm.fooCode" /></td>
+			</tr>
+			<tr>
+				<td>Foo Name</td>
+				<td><input type="text" ng-model="fooForm.fooName" /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="Submit"
+					class="blue-button" /></td>
+			</tr>
+		</table>
+	</form>
+	<br />
+	<a class="create-button" ng-click="createFoo()">Create New Foo</a>
+	<table border="1">
+		<tr>
+			<th>Foo Id</th>
+			<th>Foo Code</th>
+			<th>Foo Name</th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</tr>
+		<!-- $scope.foos -->
+		<tr ng-repeat="foo in foos">
+			<td>{{ foo.fooid }}</td>
+			<td>{{ foo.foocode }}</td>
+			<td>{{ foo.fooname }}</td>
+			<td><a ng-click="editFoo(foo)" class="edit-button">Edit</a></td>
+			<td><a ng-click="deleteFoo(foo)" class="delete-button">Delete</a>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
