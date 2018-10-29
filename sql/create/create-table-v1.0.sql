@@ -1,9 +1,9 @@
-database design here !
-
+CREATE DATABASE taya
+--DROP DATABASE taya
 -- -----------------------------------------------------
 -- Table users
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS Users(
+CREATE TABLE Users(
 	userId BIGINT PRIMARY KEY,
     userUuid VARCHAR(255) UNIQUE,
 	firstName VARCHAR(50), 
@@ -12,16 +12,20 @@ CREATE TABLE IF NOT EXISTS Users(
 	email VARCHAR(50), 
 	password VARCHAR(150), 
 	phone VARCHAR(50), 
-	address VARCHAR(150)
+	address VARCHAR(150),
+	createDate DATE,
+	modifiedDate DATE,
 );
+--DROP TABLE Users
 -- -----------------------------------------------------
 -- Table   Category 
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS Category  (
+CREATE TABLE Category  (
    categoryId  BIGINT PRIMARY KEY,
    categoryName  VARCHAR(150),
    description  VARCHAR(1000)
 );
+--DROP TABLE Category
 -- -----------------------------------------------------
 -- Table   Product 
 -- -----------------------------------------------------
@@ -37,10 +41,11 @@ CREATE TABLE Product(
 	safetyStockLever INT,
 	standardCost INT
 );
+--DROP TABLE Product
 -- -----------------------------------------------------
 -- Table   Customer 
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS Customer  (
+CREATE TABLE Customer  (
    customerId BIGINT PRIMARY KEY,
    firstName  VARCHAR(50),
    lastName  VARCHAR(50),
@@ -49,42 +54,57 @@ CREATE TABLE IF NOT EXISTS Customer  (
    address  VARCHAR(150),
    dob  DATE
 );
+--DROP TABLE Customer
 -- -----------------------------------------------------
 -- Table   Order 
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS Orders  (
+CREATE TABLE Orders  (
    orderId BIGINT PRIMARY KEY,
    orderUuid VARCHAR(255) UNIQUE,
    orderDate  DATE,
    description  VARCHAR(1000)
 );
+--DROP TABLE Orders
 -- -----------------------------------------------------
--- Table   Image 
+-- Table OrderDetails 
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS Image (
-   imageId  BIGINT PRIMARY KEY,
-   imageName  VARCHAR(100),
-   imageData  bytea 
-);
--- -----------------------------------------------------
--- Table   OrderDetails 
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS   OrderDetails  (
+CREATE TABLE OrderDetails  (
    orderDetailsId BIGINT PRIMARY KEY,
    quantity  INT,
    price  NUMERIC
 );
+--DROP TABLE OrderDetails
 -- -----------------------------------------------------
--- Table   SpecialOffer 
+-- Table Image 
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS   SpecialOffer  (
-   specialOfferId BIGINT PRIMARY KEY,
-   description  VARCHAR(1000),
-   percent  INT
+CREATE TABLE Image (
+   imageId  BIGINT PRIMARY KEY,
+   imageName  VARCHAR(100),
+   imageData  BYTEA 
 );
+--DROP TABLE Image
 -- -----------------------------------------------------
--- Table   SpecialOfferProduct 
+-- Table Country 
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS   SpecialOfferProduct  (
-   specialOfferProductId BIGINT PRIMARY KEY
+CREATE TABLE Country (
+	countryId BIGINT NOT NULL PRIMARY KEY,
+	name VARCHAR(75) NULL,
+	a2 VARCHAR(75) NULL,
+	a3 VARCHAR(75) NULL,
+	number_ VARCHAR(75) NULL,
+	idd_ VARCHAR(75) NULL,
+	zipRequired BOOLEAN,
+	active_ BOOLEAN
 );
+--DROP TABLE Country
+-- -----------------------------------------------------
+-- Table Region 
+-- -----------------------------------------------------
+CREATE TABLE Region (
+	regionId BIGINT NOT NULL PRIMARY KEY,
+	countryId BIGINT,
+	regionCode VARCHAR(75) NULL,
+	name VARCHAR(75) NULL,
+	active_ BOOLEAN
+);
+--DROP TABLE Region
