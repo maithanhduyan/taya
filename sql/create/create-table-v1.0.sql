@@ -108,3 +108,14 @@ CREATE TABLE Region (
 	active_ BOOLEAN
 );
 --DROP TABLE Region
+-- -----------------------------------------------------
+-- Table Region 
+-- -----------------------------------------------------
+CREATE TABLE District (
+	district BIGINT NOT NULL PRIMARY KEY,
+	regionId BIGINT,
+	districtCode VARCHAR(75) NULL,
+	name VARCHAR(75) NULL,
+	active_ BOOLEAN
+);
+--DROP TABLE Region
