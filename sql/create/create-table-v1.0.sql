@@ -78,9 +78,12 @@ CREATE TABLE OrderDetails  (
 -- Table Image 
 -- -----------------------------------------------------
 CREATE TABLE Image (
-   imageId  BIGINT PRIMARY KEY,
-   imageName  VARCHAR(100),
-   imageData  BYTEA 
+   	imageId BIGINT NOT NULL PRIMARY KEY,
+	modifiedDate DATE null,
+	type_ VARCHAR(75) null,
+	height INTEGER,
+	width INTEGER,
+	size_ INTEGER
 );
 --DROP TABLE Image
 -- -----------------------------------------------------
