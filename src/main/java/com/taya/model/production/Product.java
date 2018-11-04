@@ -23,9 +23,13 @@ public class Product implements Serializable {
 
 	private Boolean makeflag;
 
+	private String productcode;
+
 	private String productname;
 
 	private String productnumber;
+
+	private String productuuid;
 
 	private Integer safetystocklever;
 
@@ -66,6 +70,14 @@ public class Product implements Serializable {
 		this.makeflag = makeflag;
 	}
 
+	public String getProductcode() {
+		return this.productcode;
+	}
+
+	public void setProductcode(String productcode) {
+		this.productcode = productcode;
+	}
+
 	public String getProductname() {
 		return this.productname;
 	}
@@ -80,6 +92,14 @@ public class Product implements Serializable {
 
 	public void setProductnumber(String productnumber) {
 		this.productnumber = productnumber;
+	}
+
+	public String getProductuuid() {
+		return this.productuuid;
+	}
+
+	public void setProductuuid(String productuuid) {
+		this.productuuid = productuuid;
 	}
 
 	public Integer getSafetystocklever() {
