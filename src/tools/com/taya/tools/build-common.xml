@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<project name="build-common"
+	xmlns:antelope="antlib:ise.antelope.tasks"
+	xmlns:artifact="antlib:org.apache.maven.artifact.ant"
+>
+
+</project>
