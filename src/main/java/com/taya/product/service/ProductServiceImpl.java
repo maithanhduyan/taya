@@ -5,12 +5,23 @@ package com.taya.product.service;
 
 import java.util.List;
 
+import javax.transaction.SystemException;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Transactional;
+
 import com.taya.product.model.Product;
 
 /**
  * @author Mai Thành Duy An
  */
-public class ProductServiceImpl implements ProductServiceExtend{
+
+@Repository
+@Service
+@Transactional(isolation = Isolation.DEFAULT, rollbackFor = { Exception.class, SystemException.class })
+public class ProductServiceImpl implements ProductServiceExtend {
 
 	@Override
 	public Product addProduct(long id, String color, long productCategoryId, String productName, String productUUID,

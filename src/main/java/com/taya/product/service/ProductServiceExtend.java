@@ -5,8 +5,6 @@ package com.taya.product.service;
 
 import java.util.List;
 
-import org.springframework.data.jpa.repository.Query;
-
 import com.taya.product.model.Product;
 
 /**
@@ -24,7 +22,7 @@ public interface ProductServiceExtend {
 
 	public Product finfById(long id);
 	
-	@Query("SELECT p FROM Product WHERE p.productname = :productName")
+	//@Query("SELECT p FROM Product WHERE p.productname = :productName")
 	List<Product> findByName(String productName);
 
 }

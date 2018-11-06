@@ -10,7 +10,7 @@ import com.taya.product.model.Product;
  */
 public class ProductServiceUtil {
 	
-	public static Product addProduct(long id, String color, long productCategoryId, String productName, String productUUID,
+	public static Product addOrUpdate(long id, String color, long productCategoryId, String productName, String productUUID,
 			Integer standardCost) {
 		
 		return null;

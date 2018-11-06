@@ -20,8 +20,5 @@ public class ProductController {
 
 	Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	/*@RequestMapping("/Product/getAll")
-	@ResponseBody*/
-	
 	
 }

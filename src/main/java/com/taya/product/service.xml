@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 
-<entity name="Foo" local-service="true" remote-service="true">
+<entity name="Product" >
 
 	<!-- PK fields -->
 
-	<column name="fooId" type="long" primary="true" />
+	<column name="productId" type="long" primary="true" />
 
 	<!-- Audit fields -->
 
@@ -16,21 +16,34 @@
 
 	<!-- Other fields -->
 
-	<column name="field1" type="String" />
-	<column name="field2" type="boolean" />
-	<column name="field3" type="int" />
-	<column name="field4" type="Date" />
-	<column name="field5" type="String" />
+	<column name="name" type="String" />
+	<column name="productcategoryid" type="long" />
+	<column name="code" type="boolean" />
+	<column name="color" type="String" />
+	<column name="manufactureDate" type="Date" />
+	<column name="productuuid" type="String" />
+	<column name="standardcost" type="String" />
 
 	<!-- Order -->
 
 	<order by="asc">
-		<order-column name="field1" />
+		<order-column name="name" />
 	</order>
 
 	<!-- Finder methods -->
 
-	<finder name="Field2" return-type="Collection">
-		<finder-column name="field2" />
+	<finder name="FindByName" return-type="Collection">
+		<finder-column name="name" />
+	</finder>
+	
+	<finder name="FindByName_Code" return-type="Collection">
+		<finder-column name="name" />
+		<finder-column name="code" />
+	</finder>
+	
+	<finder name="FindByName_Code_Color" return-type="Collection">
+		<finder-column name="name" />
+		<finder-column name="code" />
+		<finder-column name="color" />
 	</finder>
 </entity>
