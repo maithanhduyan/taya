@@ -11,6 +11,7 @@
 .sts4-cache
 /bin
 /logs
+/src/main/resources/static/bower_components
 
 ### IntelliJ IDEA ###
 .idea

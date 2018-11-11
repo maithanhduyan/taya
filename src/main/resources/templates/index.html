@@ -2,10 +2,12 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>TAYA</title>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>
+<script th:src="@{/bower_components/angular/angular.js}"></script>
 <script th:src="@{/js/main.js}"></script>
+<script th:src="@{/bower_components/jquery/dist/jquery.min.js}"></script>
 <link th:href="@{/css/main.css}" rel="stylesheet" />
+<script th:src="@{/bower_components/bootstrap/dist/js/bootstrap.min.js}"></script>
+<link th:href="@{/bower_components/bootstrap/dist/css/bootstrap.css}" rel="stylesheet" />
 <head>
 <body ng-app="Foo" ng-controller="FooController">
 
