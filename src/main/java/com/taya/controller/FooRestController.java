@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.taya.form.FooForm;
 import com.taya.model.Foo;
-import com.taya.model.FooForm;
 import com.taya.reposotory.FooRepository;
 import com.taya.reposotory.FooRepositoryCustom;
 

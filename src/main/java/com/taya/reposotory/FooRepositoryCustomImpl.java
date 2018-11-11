@@ -7,8 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.taya.form.FooForm;
 import com.taya.model.Foo;
-import com.taya.model.FooForm;
 
 /**
  * @author Mai Thành Duy An

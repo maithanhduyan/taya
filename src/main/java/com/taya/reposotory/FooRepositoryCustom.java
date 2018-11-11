@@ -1,7 +1,7 @@
 package com.taya.reposotory;
 
+import com.taya.form.FooForm;
 import com.taya.model.Foo;
-import com.taya.model.FooForm;
 
 /**
  * @author Mai Thành Duy An
