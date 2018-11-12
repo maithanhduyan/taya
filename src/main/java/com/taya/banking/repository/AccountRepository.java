@@ -4,6 +4,7 @@
 package com.taya.banking.repository;
 
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import com.taya.banking.model.Account;
 
@@ -11,6 +12,7 @@ import com.taya.banking.model.Account;
  * @author Mai Thành Duy An
  *
  */
-public interface AccountRepository extends CrudRepository<Account, Long>{
+@Repository
+public interface AccountRepository extends CrudRepository<Account, Long>,AccountRepositoryCustom{
 
 }

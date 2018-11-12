@@ -3,6 +3,7 @@
  */
 package com.taya.banking.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,8 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/transaction")
 public class TransactionController {
 
-	@RequestMapping("/begin/{verifyAccount}")
-	public Boolean verifyAcount() {
-		return true;
+	@Autowired
+	//Account account;
+
+	@RequestMapping("/account")
+	public String verifyAcount() {
+		return "";
 	}
 }
