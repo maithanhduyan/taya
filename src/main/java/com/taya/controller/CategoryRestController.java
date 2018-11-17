@@ -55,7 +55,7 @@ public class CategoryRestController {
 		return cate;
 	}
 	
-	@RequestMapping(value = "/category/updateCategory", method = RequestMethod.POST, produces = { MediaType.APPLICATION_JSON_VALUE })
+	@RequestMapping(value = "/category/update", method = RequestMethod.POST, produces = { MediaType.APPLICATION_JSON_VALUE })
 	@ResponseBody
 	public Category updateCategory(@RequestBody CategoryForm categoryForm) {
 		return categoryRepositoryCustom.addOrUpdate(categoryForm);
