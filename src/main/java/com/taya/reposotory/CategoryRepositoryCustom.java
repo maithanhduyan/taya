@@ -11,6 +11,6 @@ import com.taya.model.Category;
  */
 public interface CategoryRepositoryCustom {
 
-	public Category addOrUpdate(CategoryForm category);
+	public Category addOrUpdate(CategoryForm categoryForm);
 	
 }
