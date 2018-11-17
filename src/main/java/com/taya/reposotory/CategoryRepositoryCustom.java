@@ -3,6 +3,7 @@
  */
 package com.taya.reposotory;
 
+import com.taya.form.CategoryForm;
 import com.taya.model.Category;
 
 /**
@@ -10,6 +11,6 @@ import com.taya.model.Category;
  */
 public interface CategoryRepositoryCustom {
 
-	public Category addOrUpdate(Category category);
+	public Category addOrUpdate(CategoryForm category);
 	
 }
