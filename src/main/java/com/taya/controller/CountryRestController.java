@@ -20,8 +20,8 @@ import com.taya.form.CategoryForm;
 import com.taya.form.CountryForm;
 import com.taya.model.Category;
 import com.taya.model.Country;
-import com.taya.reposotory.CountryRepository;
-import com.taya.reposotory.CountryRepositoryCustom;
+import com.taya.repository.CountryRepository;
+import com.taya.repository.CountryRepositoryCustom;
 
 /**
  * @author ManNLM

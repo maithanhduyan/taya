@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.taya.form.FooForm;
 import com.taya.model.Foo;
-import com.taya.reposotory.FooRepository;
-import com.taya.reposotory.FooRepositoryCustom;
+import com.taya.repository.FooRepository;
+import com.taya.repository.FooRepositoryCustom;
 
 /**
  * @author Mai Thành Duy An

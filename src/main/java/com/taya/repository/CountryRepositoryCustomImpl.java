@@ -1,7 +1,7 @@
 /**
  * TAYAFOOD 2018
  */
-package com.taya.reposotory;
+package com.taya.repository;
 
 import javax.persistence.EntityManager;
 

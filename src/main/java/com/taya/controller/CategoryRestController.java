@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.taya.form.CategoryForm;
 import com.taya.model.Category;
-import com.taya.reposotory.CategoryRepository;
-import com.taya.reposotory.CategoryRepositoryCustom;
+import com.taya.repository.CategoryRepository;
+import com.taya.repository.CategoryRepositoryCustom;
 
 /**
  * @author ManNLM
