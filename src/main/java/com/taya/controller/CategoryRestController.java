@@ -21,7 +21,7 @@ import com.taya.reposotory.CategoryRepositoryCustom;
  */
 @RestController
 @RequestMapping("/api")
-public class CategoryController {
+public class CategoryRestController {
 	
 	Logger logger = LoggerFactory.getLogger(this.getClass());
 	
