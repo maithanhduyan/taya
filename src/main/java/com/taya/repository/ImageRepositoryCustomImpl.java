@@ -35,13 +35,13 @@ public class ImageRepositoryCustomImpl implements ImageRepositoryCustom {
 			image = new Image();
 			image.setImagename(imageForm.getImagename());
 			image.setImagedata(imageForm.getImagedata());
-			image.setProductid(image.getProductid());
+			image.setProductid(imageForm.getProductid());
 			crud.save(image);
 			return image;
 		} else {
 			image.setImagename(imageForm.getImagename());
 			image.setImagedata(imageForm.getImagedata());
-			image.setProductid(image.getProductid());
+			image.setProductid(imageForm.getProductid());
 			entityManager.flush();
 		}
 		return image;
