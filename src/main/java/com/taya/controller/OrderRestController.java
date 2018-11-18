@@ -46,7 +46,7 @@ public class OrderRestController {
 
 	@RequestMapping("/order/{orderId}")
 	@ResponseBody
-	public Order getCategoryById(@PathVariable("orderId") Long orderId) {
+	public Order getOrderById(@PathVariable("orderId") Long orderId) {
 		Order order = null;
 		try {
 			order = orderRepository.findById(orderId).get();
@@ -60,7 +60,7 @@ public class OrderRestController {
 	@RequestMapping(value = "/order/update", method = RequestMethod.PUT, produces = {
 			MediaType.APPLICATION_JSON_VALUE })
 	@ResponseBody
-	public Order updateCategory(@RequestBody OrderForm orderForm) {
+	public Order updateOrder(@RequestBody OrderForm orderForm) {
 		return orderRepositoryCustom.addOrUpdate(orderForm);
 	}
 
