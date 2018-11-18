@@ -18,7 +18,11 @@ public class Orderdetail implements Serializable {
 	@Id
 	private Long orderdetailsid;
 
+	private Long orderid;
+
 	private BigDecimal price;
+
+	private Long productid;
 
 	private Integer quantity;
 
@@ -33,12 +37,28 @@ public class Orderdetail implements Serializable {
 		this.orderdetailsid = orderdetailsid;
 	}
 
+	public Long getOrderid() {
+		return this.orderid;
+	}
+
+	public void setOrderid(Long orderid) {
+		this.orderid = orderid;
+	}
+
 	public BigDecimal getPrice() {
 		return this.price;
 	}
 
 	public void setPrice(BigDecimal price) {
 		this.price = price;
+	}
+
+	public Long getProductid() {
+		return this.productid;
+	}
+
+	public void setProductid(Long productid) {
+		this.productid = productid;
 	}
 
 	public Integer getQuantity() {

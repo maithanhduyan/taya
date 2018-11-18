@@ -20,6 +20,8 @@ public class Image implements Serializable {
 
 	private String imagename;
 
+	private Long productid;
+
 	public Image() {
 	}
 
@@ -45,6 +47,14 @@ public class Image implements Serializable {
 
 	public void setImagename(String imagename) {
 		this.imagename = imagename;
+	}
+
+	public Long getProductid() {
+		return this.productid;
+	}
+
+	public void setProductid(Long productid) {
+		this.productid = productid;
 	}
 
 }
