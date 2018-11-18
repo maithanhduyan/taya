@@ -7,6 +7,8 @@ import javax.persistence.EntityManager;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.taya.form.OrderForm;
 import com.taya.model.Order;
@@ -15,6 +17,8 @@ import com.taya.model.Order;
  * @author ManNLM
  */
 
+@Repository
+@Transactional
 public class OrderRepositoryCustomImpl implements OrderRepositoryCustom {
 
 	@Autowired
