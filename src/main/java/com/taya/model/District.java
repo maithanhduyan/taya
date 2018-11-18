@@ -14,7 +14,7 @@ public class District implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private Long district;
+	private Long districtid;
 
 	private Boolean active;
 
@@ -27,12 +27,12 @@ public class District implements Serializable {
 	public District() {
 	}
 
-	public Long getDistrict() {
-		return this.district;
+	public Long getDistrictid() {
+		return this.districtid;
 	}
 
-	public void setDistrict(Long district) {
-		this.district = district;
+	public void setDistrictid(Long districtid) {
+		this.districtid = districtid;
 	}
 
 	public Boolean getActive() {
