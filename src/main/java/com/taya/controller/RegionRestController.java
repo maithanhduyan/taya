@@ -56,14 +56,14 @@ public class RegionRestController {
 		return region;
 	}
 
-	@RequestMapping(value = "/product/update", method = RequestMethod.PUT, produces = {
+	@RequestMapping(value = "/region/update", method = RequestMethod.PUT, produces = {
 			MediaType.APPLICATION_JSON_VALUE })
 	@ResponseBody
 	public Region updateRegion(@RequestBody RegionForm regionForm) {
 		return regionRepositoryCustom.addOrUpdate(regionForm);
 	}
 
-	@RequestMapping(value = "/product/delete/{regionId}", method = RequestMethod.DELETE, produces = {
+	@RequestMapping(value = "/region/delete/{regionId}", method = RequestMethod.DELETE, produces = {
 			MediaType.APPLICATION_JSON_VALUE })
 	@ResponseBody
 	public void deleteRegion(@PathVariable("regionId") Long regionId) {
