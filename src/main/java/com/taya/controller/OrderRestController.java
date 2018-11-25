@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.taya.form.OrderForm;
-import com.taya.model.Image;
 import com.taya.model.Order;
 import com.taya.repository.OrderRepository;
 import com.taya.repository.OrderRepositoryCustom;

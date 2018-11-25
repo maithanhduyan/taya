@@ -16,9 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.taya.form.CategoryForm;
 import com.taya.form.CountryForm;
-import com.taya.model.Category;
 import com.taya.model.Country;
 import com.taya.repository.CountryRepository;
 import com.taya.repository.CountryRepositoryCustom;
